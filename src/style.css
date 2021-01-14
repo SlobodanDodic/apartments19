@@ -1,0 +1,365 @@
+* {
+  font-family: "Philosopher", sans-serif;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.title {
+  font-size: 29px;
+  color: #ffffff;
+  background: #ffffff;
+  text-shadow: 1px 3px 0 #969696, 1px 8px 6px #aba8a8;
+}
+
+/* .title {
+  font-size: 29px;
+  color: transparent;
+  background: #d0d0d0;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+} */
+
+/*********************************NavbarTop********************************/
+
+.MuiContainer-root {
+  padding: 0px !important;
+}
+
+.MuiContainer-maxWidthLg {
+  max-width: none !important;
+}
+
+.MuiAppBar-colorPrimary {
+  color: #ffffff !important;
+  background-color: #000000b8 !important;
+  height: 50px;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 24px;
+  height: 20px;
+  right: 14px;
+  top: 15px;
+}
+
+.bm-burger-bars {
+  background: #ffffff;
+  height: 2px !important;
+}
+
+.bm-cross-button {
+  left: 8px;
+}
+
+.bm-cross {
+  background: #ffffff;
+}
+
+.bm-menu-wrap {
+  top: 0px;
+  width: 50vw !important;
+  background: linear-gradient(
+    0deg,
+    rgb(0, 0, 0, 48%) 0%,
+    rgb(0, 0, 0, 85%) 100%
+  );
+}
+
+.bm-overlay {
+  position: unset !important;
+}
+
+.bm-item-list {
+  font-size: 2rem !important;
+  text-align: center;
+}
+
+.menu-container {
+  text-align: center;
+
+  font-style: italic;
+  color: #e0e0e0b6;
+}
+
+.menu-item:hover {
+  color: rgb(255, 255, 0);
+  box-shadow: inset 0px 0px 10px #bdbdbd00;
+}
+
+#home-icon {
+  padding: 5px;
+  filter: grayscale(1);
+}
+
+#home-icon:hover {
+  filter: brightness(0.5);
+}
+
+#map-icon {
+  padding: 5px;
+  filter: grayscale(1);
+}
+
+#map-icon:hover {
+  filter: brightness(0.5);
+}
+
+/*********************************HomePage********************************/
+
+.homepage {
+  position: relative;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.homepage::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(/src/Assets/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -11;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.div-text {
+  display: flex;
+  text-transform: uppercase;
+  height: 100%;
+}
+
+.home-text {
+  font-size: 6vh;
+  margin: 0;
+  font-family: monospace;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  padding: 65px 19px;
+  color: rgb(153 146 137);
+  text-shadow: 3px 3px 5px rgb(0 0 0 / 48%), 0px 4px 5px rgb(0, 0, 0);
+  background-color: #00000087;
+}
+
+.logo {
+  width: 4rem;
+  position: absolute;
+  top: 89vh;
+  right: 3vw;
+  filter: drop-shadow(2px 4px 6px black);
+  opacity: 0.39;
+}
+
+.div-text-phone {
+  top: 87vh;
+  left: 10px;
+  position: absolute;
+  color: #ffffff;
+  text-shadow: 5px 4px 3px rgb(151 151 151);
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/*********************************About********************************/
+
+.aboutpage {
+  padding: 20px 15px 0px;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 800px;
+}
+
+.aboutpage img {
+  width: 295px;
+  border-radius: 20px;
+  margin: 30px 0px;
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+.MuiTableCell-body {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.MuiTableCell-root {
+  padding: 10px !important;
+  font-size: 1rem !important;
+  border-bottom: none !important;
+}
+
+/******************************* Gallery *******************************/
+
+.gallery {
+  padding: 10px 15px 10px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0px 4px 12px #888888;
+}
+
+.gallery-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel .slide {
+  background: #ebebeb !important;
+}
+
+.carousel-root {
+  max-width: 800px;
+  padding: 25px;
+  margin: 0 auto;
+}
+
+.carousel.carousel-slider {
+  box-shadow: 5px 10px 8px #888888;
+}
+
+/******************************* MapPage *******************************/
+
+.map-page {
+  padding: 10px 0px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0px 4px 12px #888888;
+}
+
+.leaflet-container {
+  margin: 0 auto;
+  width: 90%;
+  height: 100vh;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+/******************************* Footer *******************************/
+
+.footer {
+  margin: 0px auto;
+  text-align: center;
+  background-color: #dbdbdbcf;
+}
+
+.MuiGrid-item {
+  margin: 0 auto !important;
+}
+
+.clock {
+  height: 165px;
+  background-image: url(/src/Assets/clock.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.info-links {
+  margin: 0px auto;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.71);
+  border-radius: 7px 7px 0px 0px;
+}
+
+.info-links-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 5px 0px;
+}
+
+.footer-text {
+  position: relative;
+  padding: 10px 0px;
+  color: rgb(255, 255, 255);
+  font-family: monospace;
+  font-weight: 800;
+  letter-spacing: 2px;
+  background-color: rgba(0, 0, 0, 0.71);
+  font-size: 12px;
+}
+
+.middle-container {
+  padding: 2px 0px;
+}
+
+#boban {
+  position: absolute;
+  bottom: 0px;
+  right: 1px;
+  width: 65px;
+  padding-bottom: 4px;
+}
+
+#boban:hover {
+  filter: drop-shadow(1px 1px 7px black);
+}
+
+/******************************* Stamps ******************************/
+
+.stamp {
+  color: rgb(111, 111, 111);
+  font-size: 2rem;
+  font-weight: 700;
+  border: 0.25rem solid #555;
+  display: inline-block;
+  padding: 0.55rem 0.85rem;
+  margin: 10px -10px;
+  border-radius: 1rem;
+  mix-blend-mode: multiply;
+  transform: rotate(-5deg);
+  mask-image: url(/src/Assets/bgStamp.png);
+  mask-size: contain;
+}
+
+.save {
+  color: #d23;
+  border: 0.25rem double #d23;
+  mask-position: 2rem 3rem;
+  transform: rotate(5deg);
+}
+
+.travel {
+  color: #0a9928;
+  border: 0.25rem solid #0a9928;
+  mask-position: 1rem 6rem;
+  border-radius: 0 49%;
+  transform: rotate(-3deg);
+}
+
+.repeat {
+  color: #000657;
+  border: 0.25rem double #000657;
+  border-radius: 0;
+  transform: rotate(7deg);
+}
+
+/******************************* @media *******************************/
+
+@media (max-width: 800px) {
+  .home-text {
+    padding: 65px 12px;
+  }
+  .div-text-phone {
+    font-size: 12px;
+  }
+  .stamp {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.15rem 0.25rem;
+  }
+}
