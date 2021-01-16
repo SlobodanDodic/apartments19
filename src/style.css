@@ -44,7 +44,7 @@ body {
 
 .MuiAppBar-colorPrimary {
   color: #ffffff !important;
-  background-color: #000000b8 !important;
+  background-color: #1f141496 !important;
   height: 50px;
 }
 
@@ -89,8 +89,9 @@ body {
 }
 
 .menu-container {
+  max-width: 1200px;
+  margin: 0 auto;
   text-align: center;
-
   font-style: italic;
   color: #e0e0e0b6;
 }
@@ -133,7 +134,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url(/src/Assets/bg.jpg);
+  background-image: url(/src/Assets/hero.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -141,24 +142,25 @@ body {
   box-shadow: 5px 10px 8px #888888;
 }
 
-.div-text {
-  display: flex;
-  text-transform: uppercase;
-  height: 100%;
-}
-
 .home-text {
-  font-size: 6vh;
-  margin: 0;
-  font-family: monospace;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  padding: 65px 19px;
-  color: rgb(153 146 137);
-  text-shadow: 3px 3px 5px rgb(0 0 0 / 48%), 0px 4px 5px rgb(0, 0, 0);
-  background-color: #00000087;
+  position: relative;
+  text-align: center;
+  background-clip: text;
+  -webkit-text-fill-color: #00000017;
+  background-image: url(/src/Assets/grass.jpeg);
+
+  font-size: 5vh;
+  padding-top: 68vh;
+  background-size: 19%;
+  letter-spacing: 5px;
+  font-weight: 900;
+
+  font-family: "Sonsie One", cursive;
+
+  /*   transform: perspective(600px) rotateX(40deg); */
 }
 
+/* 
 .logo {
   width: 4rem;
   position: absolute;
@@ -167,15 +169,31 @@ body {
   filter: drop-shadow(2px 4px 6px black);
   opacity: 0.39;
 }
+ */
+
+.gif {
+  width: 20%;
+  position: absolute;
+  top: 64vh;
+  right: 40vw;
+  opacity: 0.19;
+}
 
 .div-text-phone {
-  top: 87vh;
-  left: 10px;
+  bottom: 0px;
   position: absolute;
-  color: #ffffff;
-  text-shadow: 5px 4px 3px rgb(151 151 151);
-  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 800;
+  background-color: #0000004d;
+  color: #c6c6c6;
+  text-shadow: rgb(0 0 0) 2px 2px 4px;
+  width: 100%;
   text-align: center;
+  letter-spacing: 3px;
+}
+
+.div-text-phone > p {
+  margin: 10px;
 }
 
 /*********************************About********************************/
@@ -294,6 +312,8 @@ body {
 }
 
 .middle-container {
+  max-width: 900px;
+  margin: 0 auto;
   padding: 2px 0px;
 }
 
@@ -351,15 +371,15 @@ body {
 /******************************* @media *******************************/
 
 @media (max-width: 800px) {
-  .home-text {
-    padding: 65px 12px;
-  }
-  .div-text-phone {
-    font-size: 12px;
-  }
   .stamp {
     font-size: 1.5rem;
     font-weight: 700;
     padding: 0.15rem 0.25rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home-text {
+    padding-top: 79vh;
   }
 }
